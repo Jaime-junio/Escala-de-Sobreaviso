@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalas de Serviço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escalas de Sobreaviso</h1>
+        <div class="scale" id="preto">
+            <h2>Escala de Segunda a Sexta</h2>
+            <p id="weekday">Responsável: <span class="responsavel"></span></p>
+            <button onclick="nextPerson('weekday')">Próximo</button>
+        </div>
+
+        <div class="scale" id="vermelho">
+            <h2>Escala de Finais de Semana</h2>
+            <p id="weekend">Responsável: <span class="responsavel"></span></p>
+            <button onclick="nextPerson('weekend')">Próximo</button>
+        </div>
+
+        <div class="scale" id="roxo">
+            <h2>Escala de Feriados</h2>
+            <p id="holiday">Responsável: <span class="responsavel"></span></p>
+            <button onclick="nextPerson('holiday')">Próximo</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
